@@ -1,6 +1,3 @@
-
-
-
 const container = document.querySelector(".container");
 const containerCarousel = container.querySelector(".container-carousel");
 const carousel = container.querySelector(".carousel");
