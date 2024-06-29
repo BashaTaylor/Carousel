@@ -49,7 +49,7 @@ const handleMouseDown = (e) => {
 const handleMouseMove = (e) => {
     if (!isMouseDown) return;
     const x = getMouseX(e);
-    const diff = (x - startX) * 0.2; // Adjust speed of rotation
+    const diff = (x - startX) * 0.15; // Adjust speed of rotation
     rotation = rotationOffset - diff;
     const tz = distanceZ(containerCarousel.offsetWidth, carouselItems.length, 20);
     carousel.style.transform = `translateZ(${-tz}px) rotateY(${rotation}deg)`;
