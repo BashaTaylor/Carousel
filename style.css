@@ -7,19 +7,23 @@
 body {
     margin: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-     /* Ensure the body takes up the full viewport height */
+    /* Ensure the body takes up the full viewport height */
     height: 65vh;
     background: var(--bg);
+
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Ensure the container takes up the full width */
-    height: 100%; /* Ensure the container takes up the full height */
+    width: 100%;
+    /* Ensure the container takes up the full width */
+    height: 100%;
+    /* Ensure the container takes up the full height */
 }
 
 .container-carousel {
@@ -35,7 +39,8 @@ body {
     transform-style: preserve-3d;
     user-select: none;
     cursor: grab;
-    transition: transform 0.5s ease; /* Smooth transition for rotation */
+    transition: transform 0.5s ease;
+    /* Smooth transition for rotation */
 }
 
 .carousel-item {
@@ -46,7 +51,8 @@ body {
     justify-content: center;
     align-items: center;
     transform-style: preserve-3d;
-    backface-visibility: hidden; /* Improve rendering performance */
+    backface-visibility: hidden;
+    /* Improve rendering performance */
 }
 
 .carousel-item img {
@@ -69,4 +75,8 @@ body {
     }
 }
 
+footer, h1 {
+    color: rgb(191, 189, 189);
+    display: flex;
 
+}
