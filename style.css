@@ -11,7 +11,7 @@ body {
     align-items: center;
     height: 100vh; /* Ensure the body takes up the full viewport height */
     background: var(--bg);
-    max-width: 800px;
+    max-width: 700px;
 }
 
 .container {
