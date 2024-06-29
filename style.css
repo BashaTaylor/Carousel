@@ -7,29 +7,35 @@
 body {
     margin: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Ensure the body takes up the full viewport height */
+    /* justify-content: center;
+    align-items: center; */
+     /* Ensure the body takes up the full viewport height */
+    height: 65vh;
     background: var(--bg);
-    max-width: fit-content;
+    /* max-width: fit-content; */
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Ensure the container takes up the full width */
-    height: 100%; /* Ensure the container takes up the full height */
+    width: 100%; 
+    /* Ensure the container takes up the full width */
+    height: 100%; 
+    /* Ensure the container takes up the full height */
+    
 }
 
 .container-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: var(--container-width);
     height: var(--container-height);
     perspective: 1000px;
 }
 
 .carousel {
-    position: relative;
     transform-style: preserve-3d;
     user-select: none;
     cursor: grab;
@@ -60,7 +66,7 @@ body {
     height: 100%;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 476px) {
     .container-carousel {
         --widthItem: 16rem;
         --heightItem: 12.5rem;
