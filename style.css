@@ -1,7 +1,7 @@
 :root {
     --bg: #010101;
-    --container-width: 30rem;
-    --container-height: 25rem;
+    --container-width: 35rem;
+    --container-height: 22rem;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
     align-items: center;
     height: 100vh; /* Ensure the body takes up the full viewport height */
     background: var(--bg);
+    max-width: 800px;
 }
 
 .container {
@@ -66,6 +67,4 @@ body {
     }
 }
 
-p {
-    color: white;
-}
+
