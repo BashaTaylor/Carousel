@@ -10,10 +10,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* Ensure the body takes up the full viewport height */
-    height: 65vh;
+    height: 100vh; /* Ensure the body takes up the full viewport height */
     background: var(--bg);
-
 }
 
 .container {
@@ -21,26 +19,25 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* Ensure the container takes up the full width */
     height: 100%;
-    /* Ensure the container takes up the full height */
 }
 
 .container-carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: var(--container-width);
     height: var(--container-height);
     perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel {
+    width: 100%;
+    height: 100%;
     transform-style: preserve-3d;
     user-select: none;
     cursor: grab;
-    transition: transform 0.5s ease;
-    /* Smooth transition for rotation */
+    transition: transform 0.5s ease; /* Smooth transition for rotation */
 }
 
 .carousel-item {
@@ -51,27 +48,27 @@ body {
     justify-content: center;
     align-items: center;
     transform-style: preserve-3d;
-    backface-visibility: hidden;
-    /* Improve rendering performance */
+    backface-visibility: hidden; /* Improve rendering performance */
 }
 
 .carousel-item img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.carousel,
-.carousel-item {
-    width: 100%;
-    height: 100%;
+@media screen and (max-width: 768px) {
+    :root {
+        --container-width: 25rem;
+        --container-height: 16rem;
+    }
 }
 
-@media screen and (min-width: 476px) {
-    .container-carousel {
-        --widthItem: 16rem;
-        --heightItem: 12.5rem;
+@media screen and (max-width: 480px) {
+    :root {
+        --container-width: 20rem;
+        --container-height: 14rem;
     }
 }
 
