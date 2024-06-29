@@ -7,23 +7,19 @@
 body {
     margin: 0;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
      /* Ensure the body takes up the full viewport height */
     height: 65vh;
     background: var(--bg);
-    /* max-width: fit-content; */
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; 
-    /* Ensure the container takes up the full width */
-    height: 100%; 
-    /* Ensure the container takes up the full height */
-    
+    width: 100%; /* Ensure the container takes up the full width */
+    height: 100%; /* Ensure the container takes up the full height */
 }
 
 .container-carousel {
