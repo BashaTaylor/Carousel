@@ -24,7 +24,7 @@ body {
 .container-carousel {
     width: var(--container-width);
     height: var(--container-height);
-    perspective: 1100px;
+    perspective: 1000px;
 }
 
 .carousel {
