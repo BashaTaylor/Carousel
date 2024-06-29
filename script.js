@@ -17,7 +17,7 @@ const createCarousel = () => {
 
     carousel.style.width = tz * 2 + gap * length + "px";
     carousel.style.transform = `translateZ(${-tz}px) rotateY(${rotation}deg)`;
-    
+
     carouselItems.forEach((item, i) => {
         const degreesByItem = degrees * i;
         item.style.transform = `rotateY(${degreesByItem}deg) translateZ(${tz}px)`;
@@ -51,7 +51,8 @@ const handleMouseMove = (e) => {
     const x = getMouseX(e);
     const diff = (x - startX) * 0.2; // Adjust speed of rotation
     rotation = rotationOffset - diff;
-    carousel.style.transform = `translateZ(${-distanceZ}px) rotateY(${rotation}deg)`;
+    const tz = distanceZ(containerCarousel.offsetWidth, carouselItems.length, 20);
+    carousel.style.transform = `translateZ(${-tz}px) rotateY(${rotation}deg)`;
 };
 
 const handleMouseUp = () => {

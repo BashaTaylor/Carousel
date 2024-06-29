@@ -1,16 +1,15 @@
 :root {
     --bg: #010101;
-    --container-width: 20rem;
-    --container-height: 15rem;
+    --container-width: 25rem;
+    --container-height: 20rem;
 }
 
 body {
-    text-align: center;
-    padding: 4rem 0;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh; /* Ensure the body takes up the full viewport height */
     background: var(--bg);
 }
 
@@ -18,13 +17,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%; /* Ensure the container takes up the full width */
+    height: 100%; /* Ensure the container takes up the full height */
 }
 
 .container-carousel {
-    margin: 0 auto;
     width: var(--container-width);
     height: var(--container-height);
-    perspective: 1000px;
+    perspective: 1100px;
 }
 
 .carousel {
@@ -58,36 +58,6 @@ body {
     width: 100%;
     height: 100%;
 }
-
-.carousel-item:nth-child(1) {
-    transform: rotateY(0deg) translateZ(var(--tz));   
-}
-
-.carousel-item:nth-child(2) {
-    transform: rotateY(45deg) translateZ(var(--tz));   
-}
-
-.carousel-item:nth-child(3) {
-    transform: rotateY(45deg) translateZ(var(--tz));   
-}
-.carousel-item:nth-child(4) {
-    transform: rotateY(45deg) translateZ(var(--tz));   
-}
-.carousel-item:nth-child(5) {
-    transform: rotateY(45deg) translateZ(var(--tz));   
-}
-.carousel-item:nth-child(6) {
-    transform: rotateY(45deg) translateZ(var(--tz));   
-}
-.carousel-item:nth-child(7) {
-    transform: rotateY(45deg) translateZ(var(--tz));   
-}
-.carousel-item:nth-child(8) {
-    transform: rotateY(45deg) translateZ(var(--tz));   
-}
-
-
-/* Add additional nth-child styles for other carousel items as needed */
 
 @media screen and (min-width: 576px) {
     .container-carousel {
